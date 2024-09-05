@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2e7bb978-847a-4561-bb48-85782ce842e1/resourceGroups/portfolio/providers/Microsoft.Web/sites/portfolio-sainithinyagati",
+    "appService.deploySubpath": "dist"
+}
