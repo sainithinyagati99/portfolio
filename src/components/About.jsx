@@ -6,8 +6,7 @@ const About = () => {
   const FontAwesomeIcons = [
     { icon: faLinkedin, url: 'https://www.linkedin.com/in/sainithin-yagati/', target: '_blank', hover:'text-blue-600' },
     { icon: faGithub, url: 'https://github.com/sainithinyagati99', target: '_blank', hover:'text-black' },
-    { icon: faDiscord, url: 'https://discord.com/users/651407027163103262', target: '_blank', hover:'text-indigo-600' },
-    { icon: faXTwitter, url: 'https://x.com/sai_yagati', target: '_blank', hover:'text-black' },
+    { icon: faDiscord, url: 'https://discord.com/users/651407027163103262', target: '_blank', hover:'text-indigo-600' }
   ]
   return (
     <>

@@ -12,7 +12,7 @@ const SkillandProject = () => {
 
   return (
     <>
-    <div className='h-96 bg-black rounded-2xl overflow-y-scroll p-4 text-white'>
+    <div className='h-auto bg-black rounded-2xl overflow-y-scroll p-4 text-white'>
       <div className='text-center text-white m-2'>things i've built🚀</div>
       {projects.map((project, index) => (
         <div key={index} className='relative-group border-2 border-green-500 rounded-md p-2 mb-2 hover:bg-green-700 transition-colors duration-150'  onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>

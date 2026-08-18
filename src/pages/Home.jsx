@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-tl from-black to-neutral-600">
-      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-12 w-5/6 p-3">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-12 w-5/6 p-3" >
         {/* Render each card dynamically */}
         {cards.map((card) => (
-          <div className="p-4 border-4 border-gray-300 rounded-3xl opacity-75 hover:opacity-100 transition-opacity duration-25" key={card.key}>
+          <div className="p-4 border-4 border-gray-300 rounded-3xl opacity-75 hover:opacity-100 hover:-translate-y-2 hover:shadow-lg transition-all duration-300" key={card.key}>
             {card.component}
           </div>
         ))}
