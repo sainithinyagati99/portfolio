@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faXTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { TypeAnimation } from 'react-type-animation';
 
 const About = () => {
@@ -11,7 +11,13 @@ const About = () => {
   return (
     <>
     <div className='flex flex-col items-center justify-center'>
-      <img src="my.png" alt="" className='h-1/2 w-1/2 rounded-full border-gray-300 border-4' />
+      <div className="group h-1/2 w-1/2 rounded-full bg-gradient-to-tr from-blue-500 via-emerald-400 to-orange-400 p-1 transition duration-500 hover:scale-110 hover:shadow-[0_0_30px_rgba(52,211,153,0.6)]">
+        <img
+          src="my.png"
+          alt="Sai Nithin Yagati"
+          className="h-full w-full rounded-full border-4 border-black object-cover transition duration-500 group-hover:scale-105"
+        />
+      </div>
       <b className='text-3xl text-white text-center'>sai nithin yagati</b>
       <TypeAnimation
         sequence={[
@@ -33,6 +39,7 @@ const About = () => {
       <div className='flex flex-row justify-center items-center gap-2 mt-4'>
         {FontAwesomeIcons.map((icon, index) => (
           <FontAwesomeIcon
+            key={icon.url}
             icon={icon.icon}
             className={`text-white hover:${icon.hover} cursor-auto duration-500`}
             size="2x"
